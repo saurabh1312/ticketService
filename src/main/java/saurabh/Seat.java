@@ -15,7 +15,10 @@ public class Seat {
 
     public static final int numSeatsPerRow = 15;
 
-    // To figure out the "best" available seats
+    /**
+     * To figure out the "best" available seats
+     * Middle rows and seats are good, corner ones are bad
+     */
     public static List<Row> rowAppealRankedList = Arrays.asList(Row.H,
             Row.G, Row.I, Row.F, Row.J, Row.E, Row.K, Row.D, Row.L,
             Row.C, Row.M, Row.B, Row.N, Row.A, Row.O);
